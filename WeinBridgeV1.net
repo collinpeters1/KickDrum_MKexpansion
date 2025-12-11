@@ -1,0 +1,27 @@
+* C:\Users\colli\Desktop\EE\Synth\LTKick\WeinBridgeV1.asc
+R1 V_out N004 {Rosc}
+R2 V_out N001 100k
+R3 N001 0 50501
+R4 0 N002 {Rosc}
+C1 0 N002 100n
+C2 N002 N004 100n
+V1 V- 0 -12
+V2 V+ 0 12
+R5 N003 V_out 10k
+C3 N003 0 1µ
+XU1 N002 N001 V+ V- V_out TL072
+.lib opamp.sub
+; --- Parameter to sweep the resistor ---
+.param Rosc=15k
+.step param Rosc list 6k 8k 10k 15k
+; --- Transient simulation ---
+.tran 0 2 0 startup
+; --- Zero-crossing frequency measurement ---
+; We look for the 3rd and 4th rising zero-crossings of V(v_out)
+; --- Compute period and frequency ---
+.meas TRAN period TRIG V(v_out) VAL=0 RISE=3 TARG V(v_out) VAL=0 RISE=4
+.meas TRAN freq PARAM 1/period
+.wave "C:\Users\colli\Desktop\EE\Synth\LTKick\wein_bridge.wav" 16 44.1k V(v_out)/12
+.lib C:\Users\colli\Desktop\EE\Synth\LTKick\TL072.301
+.backanno
+.end
