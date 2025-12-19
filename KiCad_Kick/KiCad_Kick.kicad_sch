@@ -3594,167 +3594,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "ltspice:voltage"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "voltage_0_0"
-				(polyline
-					(pts
-						(xy 0 -1.905) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -3.5052) (xy 0 -2.2352)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -4.445)
-					(radius 2.54)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -6.985) (xy 0 -7.62)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -2.8702) (xy -0.635 -2.8702)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -6.0452) (xy -0.635 -6.0452)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 -1.27 0)
-					(length 0.0005)
-					(name "+"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 0)
-					(length 0.0005)
-					(name "-"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -3868,17 +3707,6 @@
 		)
 		(uuid "025789e0-b3b0-4bea-b750-fcfcc87848e9")
 	)
-	(text ".tran 0 5 0 0.01"
-		(exclude_from_sim no)
-		(at 156.21 128.905 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "05265b57-530f-4920-abae-cdb268875492")
-	)
 	(text "tip needs to be switched with a normally closed config\nwhen no jack is in, that side needs to be grounded\n"
 		(exclude_from_sim no)
 		(at 65.024 149.86 0)
@@ -3942,17 +3770,6 @@
 			(justify left)
 		)
 		(uuid "63414757-8835-4af0-b281-7fe516939ff6")
-	)
-	(text "For Voltage to Op amps"
-		(exclude_from_sim no)
-		(at 164.338 103.632 0)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "6b3196d7-ab41-4ca5-9ba5-eed10fce5635")
 	)
 	(text "Mixer Section"
 		(exclude_from_sim no)
@@ -4339,12 +4156,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b0658f0a-ae32-451a-b84d-ed9421132630")
-	)
-	(junction
-		(at 394.97 182.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b0666bae-9bac-4197-a4e6-75e155629cf2")
 	)
 	(junction
 		(at 283.21 140.97)
@@ -4794,16 +4605,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 113.03) (xy 118.11 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14eece7b-b6fb-434f-b1b0-a2b7ae4728c6")
-	)
-	(wire
-		(pts
 			(xy 236.22 161.29) (xy 245.11 161.29)
 		)
 		(stroke
@@ -4824,7 +4625,7 @@
 	)
 	(wire
 		(pts
-			(xy 394.97 196.85) (xy 394.97 182.88)
+			(xy 392.43 196.85) (xy 392.43 182.88)
 		)
 		(stroke
 			(width 0.1524)
@@ -4944,16 +4745,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 113.03) (xy 148.59 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23bb5103-cbe0-45c8-a601-226683144af2")
-	)
-	(wire
-		(pts
 			(xy 257.81 125.73) (xy 254 125.73)
 		)
 		(stroke
@@ -5001,16 +4792,6 @@
 			(type default)
 		)
 		(uuid "264bd5cf-316b-4325-802c-0cb110249a62")
-	)
-	(wire
-		(pts
-			(xy 118.11 113.03) (xy 118.11 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27300190-5234-49ae-a8ab-329588744761")
 	)
 	(wire
 		(pts
@@ -5444,16 +5225,6 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 113.03) (xy 128.27 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52d20015-6e79-4667-b126-dc95d1da0aee")
-	)
-	(wire
-		(pts
 			(xy 476.25 180.34) (xy 471.17 180.34)
 		)
 		(stroke
@@ -5774,7 +5545,7 @@
 	)
 	(wire
 		(pts
-			(xy 457.2 196.85) (xy 394.97 196.85)
+			(xy 457.2 196.85) (xy 392.43 196.85)
 		)
 		(stroke
 			(width 0.1524)
@@ -6194,16 +5965,6 @@
 	)
 	(wire
 		(pts
-			(xy 398.78 182.88) (xy 394.97 182.88)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "877e6a67-421c-42a9-9bd8-effa3587d416")
-	)
-	(wire
-		(pts
 			(xy 308.61 156.21) (xy 308.61 123.19)
 		)
 		(stroke
@@ -6311,16 +6072,6 @@
 			(type solid)
 		)
 		(uuid "96592ee4-d4dc-4e9b-8fc9-3d50e5357b73")
-	)
-	(wire
-		(pts
-			(xy 180.34 115.57) (xy 180.34 111.76)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "972d39d2-5f38-408d-8bb4-29b609117f00")
 	)
 	(wire
 		(pts
@@ -6634,7 +6385,7 @@
 	)
 	(wire
 		(pts
-			(xy 394.97 182.88) (xy 392.43 182.88)
+			(xy 392.43 182.88) (xy 398.78 182.88)
 		)
 		(stroke
 			(width 0.1524)
@@ -7084,16 +6835,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 115.57) (xy 167.64 113.03)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "de27125b-2794-49ed-a7ac-09bf3bf59b74")
-	)
-	(wire
-		(pts
 			(xy 96.52 171.45) (xy 96.52 172.72)
 		)
 		(stroke
@@ -7456,46 +7197,6 @@
 			)
 		)
 	)
-	(global_label "V--"
-		(shape bidirectional)
-		(at 180.34 111.76 90)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "38b9a85a-ffdb-494e-9053-5d9dd663f309")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 180.34 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "V++"
-		(shape bidirectional)
-		(at 167.64 113.03 90)
-		(effects
-			(font
-				(size 1.0668 1.0668)
-			)
-			(justify left)
-		)
-		(uuid "5bc1095e-de66-4440-9101-b48f68838611")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 167.64 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "-12V"
 		(shape input)
 		(at 127 236.22 0)
@@ -7605,39 +7306,6 @@
 				(hide yes)
 			)
 		)
-	)
-	(hierarchical_label "PitchCV"
-		(shape input)
-		(at 128.27 113.03 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0acbb818-3c7a-4e80-8557-c54005c62577")
-	)
-	(hierarchical_label "AccentCV"
-		(shape input)
-		(at 116.84 113.03 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1fe7a72a-660b-40eb-8680-bea5491ae775")
-	)
-	(hierarchical_label "+12V"
-		(shape input)
-		(at 148.59 113.03 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7d7bc841-5df0-4112-9b0e-5ea0d07ddc80")
 	)
 	(hierarchical_label "PitchCV"
 		(shape input)
@@ -7836,72 +7504,6 @@
 		)
 	)
 	(symbol
-		(lib_id "ltspice:GND")
-		(at 128.27 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "07a8d073-08f5-4f35-ab49-d8120b1c9342")
-		(property "Reference" "#GND018"
-			(at 128.27 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "0"
-			(at 128.27 121.92 0)
-			(effects
-				(font
-					(size 1.0668 1.0668)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 128.27 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 128.27 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 128.27 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin ""
-			(uuid "2a238a29-c568-4016-89c2-938f788af822")
-		)
-		(instances
-			(project ""
-				(path "/a4d16fe1-a5b3-4153-9b01-caf8920e363d"
-					(reference "#GND018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "ltspice:res")
 		(at 270.51 175.26 0)
 		(unit 1)
@@ -8016,7 +7618,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 320.04 172.72 0)
 			(effects
 				(font
@@ -8302,7 +7904,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm"
 			(at 483.87 187.96 0)
 			(effects
 				(font
@@ -8590,7 +8192,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 148.844 171.704 90)
 			(effects
 				(font
@@ -8659,7 +8261,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm"
 			(at 299.72 116.84 0)
 			(effects
 				(font
@@ -8919,7 +8521,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 87.63 215.138 90)
 			(effects
 				(font
@@ -9120,7 +8722,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L9.0mm_W5.1mm_P7.50mm_MKT"
 			(at 214.63 121.92 0)
 			(effects
 				(font
@@ -9175,6 +8777,73 @@
 			(project ""
 				(path "/a4d16fe1-a5b3-4153-9b01-caf8920e363d"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 161.29 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "287a1d1f-3c63-44e5-b345-40e5ffcc22b9")
+		(property "Reference" "TP4"
+			(at 163.83 152.9079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 163.83 155.4479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 166.37 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 161.29 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b66c2ef-f712-4a22-b757-7217c5ee7ffc")
+		)
+		(instances
+			(project "KiCad_Kick"
+				(path "/a4d16fe1-a5b3-4153-9b01-caf8920e363d"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -9485,7 +9154,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical"
 			(at 48.26 226.06 0)
 			(effects
 				(font
@@ -9771,7 +9440,7 @@
 				(justify top)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm"
 			(at 280.67 114.3 0)
 			(effects
 				(font
@@ -9859,7 +9528,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
 			(at 156.21 176.53 0)
 			(effects
 				(font
@@ -9948,7 +9617,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 247.904 136.144 90)
 			(effects
 				(font
@@ -9985,159 +9654,6 @@
 			(project ""
 				(path "/a4d16fe1-a5b3-4153-9b01-caf8920e363d"
 					(reference "R27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ltspice:voltage")
-		(at 148.59 115.57 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "447014be-c0c6-4ae8-92a4-4d1a18e66680")
-		(property "Reference" "V1"
-			(at 150.495 116.84 0)
-			(effects
-				(font
-					(size 1.0668 1.0668)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "12V"
-			(at 150.495 123.19 0)
-			(effects
-				(font
-					(size 1.0668 1.0668)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.59 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 148.59 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 148.59 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SPICE"
-			(at 148.59 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Params" "type=\"V\" model=\"${VALUE}\" "
-			(at 148.59 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5d10ad4a-30de-4ee5-a736-fbb52c16a4dc")
-		)
-		(pin "2"
-			(uuid "0a8a2da5-458a-4f09-99d8-87b9ed681cab")
-		)
-		(instances
-			(project ""
-				(path "/a4d16fe1-a5b3-4153-9b01-caf8920e363d"
-					(reference "V1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ltspice:GND")
-		(at 118.11 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "44f747b7-28a1-4afc-ada8-e7db27d256e2")
-		(property "Reference" "#GND017"
-			(at 118.11 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "0"
-			(at 118.11 121.92 0)
-			(effects
-				(font
-					(size 1.0668 1.0668)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 118.11 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 118.11 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 118.11 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin ""
-			(uuid "551343d1-314a-4600-9341-61e915ca242c")
-		)
-		(instances
-			(project ""
-				(path "/a4d16fe1-a5b3-4153-9b01-caf8920e363d"
-					(reference "#GND017")
 					(unit 1)
 				)
 			)
@@ -10236,7 +9752,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
 			(at 224.79 161.29 0)
 			(effects
 				(font
@@ -10324,7 +9840,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_PTA3043_Single_Slide"
 			(at 500.38 151.13 0)
 			(effects
 				(font
@@ -10396,7 +9912,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
 			(at 257.81 101.6 0)
 			(effects
 				(font
@@ -11033,7 +10549,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm"
 			(at 86.0552 273.05 0)
 			(effects
 				(font
@@ -11070,72 +10586,6 @@
 			(project ""
 				(path "/a4d16fe1-a5b3-4153-9b01-caf8920e363d"
 					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ltspice:GND")
-		(at 167.64 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "62f4dd18-768b-41cf-a29e-a77fe10e6b06")
-		(property "Reference" "#GND015"
-			(at 167.64 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "0"
-			(at 167.64 121.92 0)
-			(effects
-				(font
-					(size 1.0668 1.0668)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 167.64 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 167.64 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 167.64 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin ""
-			(uuid "9685dea8-16e8-4fbe-9281-813dbf3ba572")
-		)
-		(instances
-			(project ""
-				(path "/a4d16fe1-a5b3-4153-9b01-caf8920e363d"
-					(reference "#GND015")
 					(unit 1)
 				)
 			)
@@ -11254,7 +10704,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 87.63 237.998 90)
 			(effects
 				(font
@@ -11291,72 +10741,6 @@
 			(project ""
 				(path "/a4d16fe1-a5b3-4153-9b01-caf8920e363d"
 					(reference "R31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ltspice:GND")
-		(at 148.59 123.19 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6f728dff-788f-4507-b471-f1cd543f5a60")
-		(property "Reference" "#GND013"
-			(at 148.59 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "0"
-			(at 148.59 123.19 0)
-			(effects
-				(font
-					(size 1.0668 1.0668)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.59 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 148.59 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 148.59 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin ""
-			(uuid "98851d47-039a-4f07-9f70-de6b51528b9e")
-		)
-		(instances
-			(project ""
-				(path "/a4d16fe1-a5b3-4153-9b01-caf8920e363d"
-					(reference "#GND013")
 					(unit 1)
 				)
 			)
@@ -11610,7 +10994,7 @@
 				(justify top)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm"
 			(at 502.92 157.48 0)
 			(effects
 				(font
@@ -11697,7 +11081,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
 			(at 177.8 153.67 0)
 			(effects
 				(font
@@ -11852,7 +11236,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_PTA3043_Single_Slide"
 			(at 323.85 172.72 0)
 			(effects
 				(font
@@ -12095,7 +11479,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm"
 			(at 300.99 185.7248 0)
 			(effects
 				(font
@@ -12249,7 +11633,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_PTA3043_Single_Slide"
 			(at 476.25 185.42 0)
 			(effects
 				(font
@@ -12361,93 +11745,6 @@
 		)
 	)
 	(symbol
-		(lib_id "ltspice:voltage")
-		(at 128.27 114.3 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8506d6df-f15c-4685-bad1-929752cf44f5")
-		(property "Reference" "V6"
-			(at 130.175 115.57 0)
-			(effects
-				(font
-					(size 1.0668 1.0668)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0"
-			(at 130.175 121.92 0)
-			(effects
-				(font
-					(size 1.0668 1.0668)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 128.27 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 128.27 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 128.27 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SPICE"
-			(at 128.27 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Params" "type=\"V\" model=\"${VALUE}\" "
-			(at 128.27 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f506e003-a73f-496c-a65b-fdcdffabe042")
-		)
-		(pin "1"
-			(uuid "56025882-c554-4a8a-8940-a70bcdb2871f")
-		)
-		(instances
-			(project ""
-				(path "/a4d16fe1-a5b3-4153-9b01-caf8920e363d"
-					(reference "V6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 77.47 157.48 90)
 		(unit 1)
@@ -12542,7 +11839,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles"
 			(at 229.87 128.27 0)
 			(effects
 				(font
@@ -12789,7 +12086,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm"
 			(at 113.03 217.17 0)
 			(effects
 				(font
@@ -12859,7 +12156,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm"
 			(at 113.03 232.41 0)
 			(effects
 				(font
@@ -13255,7 +12552,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
 			(at 96.2152 220.98 0)
 			(effects
 				(font
@@ -13325,7 +12622,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_PTA3043_Single_Slide"
 			(at 283.21 135.89 0)
 			(effects
 				(font
@@ -13530,7 +12827,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_PTA3043_Single_Slide"
 			(at 270.51 195.58 0)
 			(effects
 				(font
@@ -13663,93 +12960,6 @@
 		)
 	)
 	(symbol
-		(lib_id "ltspice:voltage")
-		(at 118.11 114.3 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a80dfc19-029c-46ff-93f8-b7565703c4fb")
-		(property "Reference" "V5"
-			(at 120.015 115.57 0)
-			(effects
-				(font
-					(size 1.0668 1.0668)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0"
-			(at 120.015 121.92 0)
-			(effects
-				(font
-					(size 1.0668 1.0668)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 118.11 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 118.11 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 118.11 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SPICE"
-			(at 118.11 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Params" "type=\"V\" model=\"${VALUE}\" "
-			(at 118.11 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "993355b9-71bc-487d-a888-dfa3d704ae62")
-		)
-		(pin "2"
-			(uuid "857f585c-670f-4c8a-b184-8e4aadfa4ec6")
-		)
-		(instances
-			(project ""
-				(path "/a4d16fe1-a5b3-4153-9b01-caf8920e363d"
-					(reference "V5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 287.02 203.2 0)
 		(unit 1)
@@ -13843,7 +13053,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
 			(at 242.57 118.11 0)
 			(effects
 				(font
@@ -13934,7 +13144,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm"
 			(at 97.4852 273.05 0)
 			(effects
 				(font
@@ -14217,94 +13427,6 @@
 		)
 	)
 	(symbol
-		(lib_id "ltspice:voltage")
-		(at 167.64 114.3 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b50ac787-7683-4f4e-b20d-00a30cb24ae0")
-		(property "Reference" "V3"
-			(at 169.545 115.57 0)
-			(effects
-				(font
-					(size 1.0668 1.0668)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "15"
-			(at 169.545 121.92 0)
-			(effects
-				(font
-					(size 1.0668 1.0668)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 167.64 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 167.64 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 167.64 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SPICE"
-			(at 167.64 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Params" "type=\"V\" model=\"${VALUE}\" "
-			(at 167.64 114.3 0)
-			(effects
-				(font
-					(size 1.0668 1.0668)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "df60a160-6060-4012-86fb-7c8c0dfc91b5")
-		)
-		(pin "1"
-			(uuid "4fedb833-1e95-421d-90f0-f75a1f34f68d")
-		)
-		(instances
-			(project ""
-				(path "/a4d16fe1-a5b3-4153-9b01-caf8920e363d"
-					(reference "V3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "ltspice:cap")
 		(at 105.41 161.29 90)
 		(unit 1)
@@ -14331,7 +13453,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
 			(at 105.41 161.29 0)
 			(effects
 				(font
@@ -14419,7 +13541,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm"
 			(at 86.0552 261.62 0)
 			(effects
 				(font
@@ -14522,93 +13644,6 @@
 			(project ""
 				(path "/a4d16fe1-a5b3-4153-9b01-caf8920e363d"
 					(reference "#GND008")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ltspice:voltage")
-		(at 180.34 123.19 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ba205430-ab2d-4050-b61f-bebf14f26139")
-		(property "Reference" "V4"
-			(at 178.435 115.57 0)
-			(effects
-				(font
-					(size 1.0668 1.0668)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "15"
-			(at 178.435 121.92 0)
-			(effects
-				(font
-					(size 1.0668 1.0668)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 180.34 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 180.34 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SPICE"
-			(at 180.34 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Params" "type=\"V\" model=\"${VALUE}\" "
-			(at 180.34 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d79a9fbf-7801-4c32-adcb-235ca38488c1")
-		)
-		(pin "1"
-			(uuid "6ad2ca97-f480-4bcf-977a-13e7d3493d84")
-		)
-		(instances
-			(project ""
-				(path "/a4d16fe1-a5b3-4153-9b01-caf8920e363d"
-					(reference "V4")
 					(unit 1)
 				)
 			)
@@ -14746,7 +13781,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_PTA3043_Single_Slide"
 			(at 295.91 123.19 0)
 			(effects
 				(font
@@ -15012,7 +14047,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 97.536 167.894 90)
 			(effects
 				(font
@@ -15082,7 +14117,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles"
 			(at 243.84 144.78 0)
 			(effects
 				(font
@@ -15330,7 +14365,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
 			(at 96.2152 236.22 0)
 			(effects
 				(font
@@ -15553,7 +14588,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.4mm_W2.1mm_P2.50mm"
 			(at 97.4852 261.62 0)
 			(effects
 				(font
@@ -15581,10 +14616,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "ad963c7d-f16b-4628-8ef8-d1f1ac114481")
+			(uuid "ad963c7d-f16b-4628-8ef8-d1f1ac114482")
 		)
 		(pin "2"
-			(uuid "4e366e98-598d-453e-a9be-37a8be4edd4f")
+			(uuid "4e366e98-598d-453e-a9be-37a8be4edd50")
 		)
 		(instances
 			(project ""
@@ -15779,7 +14814,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
 			(at 278.13 121.92 0)
 			(effects
 				(font
@@ -16132,7 +15167,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_PTA3043_Single_Slide"
 			(at 325.12 198.12 0)
 			(effects
 				(font
@@ -16379,7 +15414,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 458.47 185.42 0)
 			(effects
 				(font
@@ -16479,72 +15514,6 @@
 			(project ""
 				(path "/a4d16fe1-a5b3-4153-9b01-caf8920e363d"
 					(reference "#GND000")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ltspice:GND")
-		(at 180.34 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e52efd1c-323a-4605-ba8f-c5c4c36bab65")
-		(property "Reference" "#GND016"
-			(at 180.34 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "0"
-			(at 180.34 121.92 0)
-			(effects
-				(font
-					(size 1.0668 1.0668)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 180.34 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 180.34 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin ""
-			(uuid "4fbed030-bff3-4ead-bd43-74ee66dc18df")
-		)
-		(instances
-			(project ""
-				(path "/a4d16fe1-a5b3-4153-9b01-caf8920e363d"
-					(reference "#GND016")
 					(unit 1)
 				)
 			)
@@ -16948,28 +15917,28 @@
 			)
 		)
 		(pin "SN1"
-			(uuid "150d0361-8a79-44f5-b049-3a2b314206e2")
+			(uuid "150d0361-8a79-44f5-b049-3a2b314206e3")
 		)
 		(pin "S1"
-			(uuid "8ace69b6-da5e-4721-9c1b-660f77d0ad63")
+			(uuid "8ace69b6-da5e-4721-9c1b-660f77d0ad64")
 		)
 		(pin "SN2"
-			(uuid "07280b06-f57f-4da3-8246-647a042b5b14")
+			(uuid "07280b06-f57f-4da3-8246-647a042b5b15")
 		)
 		(pin "T2"
-			(uuid "b726cfdd-0bc7-49e9-a9f9-d4a59f8f578e")
+			(uuid "b726cfdd-0bc7-49e9-a9f9-d4a59f8f578f")
 		)
 		(pin "TN2"
-			(uuid "f1df2133-47e5-462e-98a5-59ec98687951")
+			(uuid "f1df2133-47e5-462e-98a5-59ec98687952")
 		)
 		(pin "S2"
-			(uuid "cc3c6f14-1ce7-4a56-abb5-f4f85ccce565")
+			(uuid "cc3c6f14-1ce7-4a56-abb5-f4f85ccce566")
 		)
 		(pin "T1"
-			(uuid "b07c1677-0b00-4138-af38-57116dce7739")
+			(uuid "b07c1677-0b00-4138-af38-57116dce773a")
 		)
 		(pin "TN1"
-			(uuid "4c9e5772-5f80-4d22-8b69-e5e1e18c31e1")
+			(uuid "4c9e5772-5f80-4d22-8b69-e5e1e18c31e2")
 		)
 		(instances
 			(project ""
@@ -17005,7 +15974,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_PTA3043_Single_Slide"
 			(at 342.9 107.95 0)
 			(effects
 				(font
@@ -17078,7 +16047,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 320.04 198.12 0)
 			(effects
 				(font
