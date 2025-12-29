@@ -1,4 +1,4 @@
-26762028855637798
+26765562949894080
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -6705,6 +6705,13 @@ capacitor tantalum
 0
 2
 2
+CollinHomemade
+ACJS-NV35-3S
+
+
+0
+3
+3
 Connector
 BJB_Pico_46.110.1001_Receptacle_Horizontal
 BJB Pico, single terminal block/receptacle, uninsulated, SMD, 6.9x2.3x2.7mm, https://www.bjb.com/media/7a/b3/df/1740905546/DM-6265102-v6_BJB_Datasheet_46.110.1001-0_SMD_Terminal_block_without_housing_Update_03_2022.PDF
@@ -69317,6 +69324,13 @@ Jumper
 SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels
 SMD Solder Jumper, 1x1.5mm Triangular Pads, 0.3mm gap, open, labeled with numbers
 solder jumper open
+0
+3
+3
+KickCustomLibrary
+ACJS-NV35-3S
+
+
 0
 3
 3
